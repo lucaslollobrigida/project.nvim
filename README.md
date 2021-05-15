@@ -10,27 +10,27 @@ Browser and launch your projects with telescope.
 
 Plug:
 ```vim
-Plug 'lucaslollobrigida/explorer.nvim'
+Plug 'lucaslollobrigida/project.nvim'
 ```
 
 Packer:
 ```lua
-use {'lucaslollobrigida/explorer.nvim'}
+use {'lucaslollobrigida/project.nvim'}
 ```
 
 ## Usage
 
-`explorer.browse`
-- `require('telescope').extensions.explorer.browse()`
+`project.browse`
+- `require('telescope').extensions.project.browse()`
 
-Can be called with `:Telescope explorer browse`
+Can be called with `:Telescope project browse`
 
 ## Configuration
 
 ```lua
 require('telescope').setup {
     extensions = {
-        explorer = {
+        project = {
             locations = {
                 {'~/projects'},
                 {'~/notes', pattern = 'Makefile'},
