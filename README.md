@@ -1,5 +1,7 @@
 # project.nvim
 
+*Work in progress*
+
 Browser and launch your projects with telescope.
 
 ## Requires
@@ -10,12 +12,12 @@ Browser and launch your projects with telescope.
 
 Plug:
 ```vim
-Plug 'lucaslollobrigida/project.nvim'
+Plug 'lucaslollobrigida/project.nvim', { 'branch': 'main' }
 ```
 
 Packer:
 ```lua
-use {'lucaslollobrigida/project.nvim'}
+use {'lucaslollobrigida/project.nvim', branch = 'main'}
 ```
 
 ## Usage
@@ -24,6 +26,9 @@ use {'lucaslollobrigida/project.nvim'}
 - `require('telescope').extensions.project.browse()`
 
 Can be called with `:Telescope project browse`
+
+- `<CR>` opens project in current window
+- `<C-t>` opens project in a new tab
 
 ## Configuration
 
@@ -43,7 +48,7 @@ require('telescope').setup {
 
 ## TODO
 
-+ [ ] Tests
+- [ ] Tests
 - [ ] Add action configuration
 - [ ] Normalize ~ into full path
 - [ ] Default file to open (entry file) per path

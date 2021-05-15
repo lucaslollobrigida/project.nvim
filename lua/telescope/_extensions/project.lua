@@ -48,7 +48,7 @@ local launcher = function(cmd)
             vim.cmd(cmd)
         end
 
-        vim.cmd(string.format('cd %s', entry.value))
+        vim.cmd(string.format('lcd %s', entry.value))
     end
 end
 
